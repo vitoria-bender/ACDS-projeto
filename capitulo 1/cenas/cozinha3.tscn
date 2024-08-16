@@ -1,0 +1,91 @@
+[gd_scene load_steps=18 format=3 uid="uid://5y81rm72qn60"]
+
+[ext_resource type="Script" path="res://capitulo 1/scripts/cozinha3.gd" id="1_ff3cf"]
+[ext_resource type="Texture2D" uid="uid://epuomlid4h1f" path="res://capitulo 1/assets/cozinha3.png" id="2_ea7mm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_buv7m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uwc8r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7ls6l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uma18"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e673m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rithf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xv2pt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qb1gk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qqek3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k8vv1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lhbf3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hovaq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y2pm1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_evvwv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g6cgq"]
+
+[node name="Cozinha3" type="Node2D"]
+script = ExtResource("1_ff3cf")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 826.0
+offset_bottom = 575.0
+texture = ExtResource("2_ea7mm")
+
+[node name="setaL" type="Button" parent="."]
+offset_left = 27.0
+offset_top = 262.0
+offset_right = 75.0
+offset_bottom = 306.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_buv7m")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_uwc8r")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7ls6l")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_uma18")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_e673m")
+flat = true
+
+[node name="setaR" type="Button" parent="."]
+offset_left = 749.0
+offset_top = 268.0
+offset_right = 800.0
+offset_bottom = 315.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rithf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_xv2pt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_qb1gk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_qqek3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k8vv1")
+flat = true
+
+[node name="relogio" type="Button" parent="."]
+offset_left = 526.0
+offset_top = 49.0
+offset_right = 640.0
+offset_bottom = 172.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lhbf3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_hovaq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_y2pm1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_evvwv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_g6cgq")
+flat = true
+
+[node name="atraso" type="Label" parent="."]
+offset_left = 276.0
+offset_top = 520.0
+offset_right = 507.0
+offset_bottom = 555.0
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[connection signal="pressed" from="setaL" to="." method="_on_seta_l_pressed"]
+[connection signal="pressed" from="setaR" to="." method="_on_seta_r_pressed"]
+[connection signal="pressed" from="relogio" to="." method="_on_relogio_pressed"]

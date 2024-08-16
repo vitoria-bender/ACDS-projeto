@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://h44pg080f6x"]
+
+[ext_resource type="Script" path="res://menu/scripts/menu.gd" id="1_wusye"]
+[ext_resource type="Texture2D" uid="uid://dv57n7a8wh23" path="res://menu/assets/thumbnail.png" id="2_j2uj0"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_wusye")
+
+[node name="background" type="TextureRect" parent="."]
+offset_left = -105.0
+offset_top = -1.0
+offset_right = 926.0
+offset_bottom = 572.0
+texture = ExtResource("2_j2uj0")
+
+[node name="play" type="Button" parent="."]
+offset_left = 326.0
+offset_top = 476.0
+offset_right = 447.0
+offset_bottom = 526.0
+theme_override_font_sizes/font_size = 18
+text = "Jogar"
+flat = true
+
+[connection signal="pressed" from="play" to="." method="_on_play_pressed"]

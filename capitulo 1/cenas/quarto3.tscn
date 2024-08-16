@@ -1,0 +1,82 @@
+[gd_scene load_steps=18 format=3 uid="uid://bye1pr7ewwgpb"]
+
+[ext_resource type="Script" path="res://capitulo 1/scripts/quarto3.gd" id="1_tcxd5"]
+[ext_resource type="Texture2D" uid="uid://eo7emxk2s5s5" path="res://capitulo 1/assets/quarto3 (1).png" id="2_xafx5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yv6jw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fnnt6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i10yc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pdlut"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jsay0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_188dg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y7buo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wlwpt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h2ct4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8ojey"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nv11a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5a833"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ad0i8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jgbwt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vn7si"]
+
+[node name="Quarto3" type="Node2D"]
+script = ExtResource("1_tcxd5")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_xafx5")
+
+[node name="porta" type="Button" parent="."]
+offset_left = 135.0
+offset_top = 112.0
+offset_right = 309.0
+offset_bottom = 503.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yv6jw")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fnnt6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_i10yc")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_pdlut")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jsay0")
+flat = true
+
+[node name="setaL" type="Button" parent="."]
+offset_left = 21.0
+offset_top = 263.0
+offset_right = 72.0
+offset_bottom = 309.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_188dg")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_y7buo")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wlwpt")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h2ct4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8ojey")
+flat = true
+
+[node name="setaR" type="Button" parent="."]
+offset_left = 756.0
+offset_top = 266.0
+offset_right = 797.0
+offset_bottom = 305.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nv11a")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5a833")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad0i8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_jgbwt")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vn7si")
+flat = true
+
+[connection signal="pressed" from="porta" to="." method="_on_porta_pressed"]
+[connection signal="pressed" from="setaL" to="." method="_on_seta_l_pressed"]
+[connection signal="pressed" from="setaR" to="." method="_on_seta_r_pressed"]

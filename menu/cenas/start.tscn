@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk4ft2w1d2swg"]
+
+[ext_resource type="Script" path="res://menu/scripts/start.gd" id="1_ovtea"]
+[ext_resource type="VideoStream" path="res://menu/assets/initGame.ogv" id="2_lmxlo"]
+
+[node name="Start" type="Node2D"]
+script = ExtResource("1_ovtea")
+
+[node name="initGame" type="VideoStreamPlayer" parent="."]
+offset_left = -13.0
+offset_top = -19.0
+offset_right = 840.0
+offset_bottom = 587.0
+stream = ExtResource("2_lmxlo")
+autoplay = true
+expand = true
+
+[connection signal="finished" from="initGame" to="." method="_on_init_game_finished"]

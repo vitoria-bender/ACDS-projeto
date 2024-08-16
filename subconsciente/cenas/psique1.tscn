@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://qb4rev7w0m23"]
+
+[ext_resource type="Script" path="res://subconsciente/scripts/psique1.gd" id="1_8mn3n"]
+[ext_resource type="Texture2D" uid="uid://cr2asn15jb0jg" path="res://subconsciente/assets/psique.png" id="2_fbrih"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y12y8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rqj07"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7mi86"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t0xdw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2pxco"]
+
+[node name="Psique1" type="Node2D"]
+script = ExtResource("1_8mn3n")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 829.0
+offset_bottom = 576.0
+texture = ExtResource("2_fbrih")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 527.0
+offset_top = 9.0
+offset_right = 597.0
+offset_bottom = 105.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_y12y8")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rqj07")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7mi86")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_t0xdw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2pxco")
+flat = true
+
+[node name="fade_rect" type="ColorRect" parent="."]
+visible = false
+offset_right = 831.0
+offset_bottom = 576.0
+color = Color(0, 0, 0, 1)
+
+[node name="novamente" type="Label" parent="."]
+offset_left = 290.0
+offset_top = 494.0
+offset_right = 550.0
+offset_bottom = 546.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

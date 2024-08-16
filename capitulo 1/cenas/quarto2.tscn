@@ -1,0 +1,101 @@
+[gd_scene load_steps=19 format=3 uid="uid://cdoxtirnic3ip"]
+
+[ext_resource type="Script" path="res://capitulo 1/scripts/quarto2.gd" id="1_r1vs1"]
+[ext_resource type="Texture2D" uid="uid://1y6lbqflcvmu" path="res://capitulo 1/assets/quarto2.png" id="2_rsuuq"]
+[ext_resource type="Texture2D" uid="uid://wa8h6g2nbykt" path="res://capitulo 1/assets/pills.png" id="3_gppa0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_af7pt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kjicl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gfu2k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_243q7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wacba"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i6ey5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_avskm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ylrgj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ofv2j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ysnaf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_woj0q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6uh06"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pxl3p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dcx0g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b5iwt"]
+
+[node name="Quarto2" type="Node2D"]
+script = ExtResource("1_r1vs1")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 826.0
+offset_bottom = 576.0
+texture = ExtResource("2_rsuuq")
+
+[node name="setaL" type="Button" parent="."]
+offset_left = 27.0
+offset_top = 266.0
+offset_right = 75.0
+offset_bottom = 309.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_af7pt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_kjicl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gfu2k")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_243q7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wacba")
+flat = true
+
+[node name="setaR" type="Button" parent="."]
+offset_left = 755.0
+offset_top = 263.0
+offset_right = 808.0
+offset_bottom = 315.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i6ey5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_avskm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ylrgj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ofv2j")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ysnaf")
+flat = true
+
+[node name="urso" type="Button" parent="."]
+offset_left = 402.0
+offset_top = 382.0
+offset_right = 452.0
+offset_bottom = 418.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_woj0q")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6uh06")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pxl3p")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_dcx0g")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b5iwt")
+flat = true
+
+[node name="urso2" type="TextureRect" parent="."]
+visible = false
+offset_left = 298.0
+offset_top = 117.0
+offset_right = 547.0
+offset_bottom = 405.0
+texture = ExtResource("3_gppa0")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 287.0
+offset_top = 491.0
+offset_right = 553.0
+offset_bottom = 552.0
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[connection signal="pressed" from="setaL" to="." method="_on_seta_l_pressed"]
+[connection signal="pressed" from="setaR" to="." method="_on_seta_r_pressed"]
+[connection signal="pressed" from="urso" to="." method="_on_urso_pressed"]

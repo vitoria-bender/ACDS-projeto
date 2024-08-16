@@ -1,0 +1,82 @@
+[gd_scene load_steps=18 format=3 uid="uid://bpcc51ft0yk6s"]
+
+[ext_resource type="Script" path="res://capitulo 1/scripts/sala4.gd" id="1_ahbt8"]
+[ext_resource type="Texture2D" uid="uid://dbopfkb1k5dl7" path="res://capitulo 1/assets/sala4 (2).png" id="2_my3wx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rg1mf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hsvxx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hxjem"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g88tr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l6e07"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_by1n5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n4oby"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h1pae"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mtsgm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tvnfg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4b7xk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aienh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8wumq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_raj67"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bvtog"]
+
+[node name="Sala4" type="Node2D"]
+script = ExtResource("1_ahbt8")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 824.0
+offset_bottom = 575.0
+texture = ExtResource("2_my3wx")
+
+[node name="setaL" type="Button" parent="."]
+offset_left = 23.0
+offset_top = 262.0
+offset_right = 73.0
+offset_bottom = 310.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rg1mf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_hsvxx")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hxjem")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_g88tr")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l6e07")
+flat = true
+
+[node name="setaR" type="Button" parent="."]
+offset_left = 752.0
+offset_top = 266.0
+offset_right = 793.0
+offset_bottom = 309.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_by1n5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_n4oby")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_h1pae")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mtsgm")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tvnfg")
+flat = true
+
+[node name="entrar" type="Button" parent="."]
+offset_left = 124.0
+offset_top = 96.0
+offset_right = 703.0
+offset_bottom = 560.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4b7xk")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_aienh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8wumq")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_raj67")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bvtog")
+flat = true
+
+[connection signal="pressed" from="setaL" to="." method="_on_seta_l_pressed"]
+[connection signal="pressed" from="setaR" to="." method="_on_seta_r_pressed"]
+[connection signal="pressed" from="entrar" to="." method="_on_entrar_pressed"]

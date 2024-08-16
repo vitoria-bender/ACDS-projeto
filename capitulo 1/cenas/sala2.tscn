@@ -1,0 +1,158 @@
+[gd_scene load_steps=30 format=3 uid="uid://b7gwehe01jtqj"]
+
+[ext_resource type="Script" path="res://capitulo 1/scripts/sala2.gd" id="1_73ss0"]
+[ext_resource type="Texture2D" uid="uid://wj0ddacrq5xg" path="res://capitulo 1/assets/sala2.png" id="2_81hfo"]
+[ext_resource type="Texture2D" uid="uid://cno6epjhjytpv" path="res://capitulo 1/assets/URSO.png" id="3_cvj8o"]
+[ext_resource type="AudioStream" uid="uid://g3c0imarndi3" path="res://soundtrack/beat.mp3" id="4_hasye"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ylj0b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5e6ne"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vowo7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_keoq3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n74al"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ugdkg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_co0ap"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_86f5f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b8wmi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xqytl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ugoom"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6svps"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jy6pj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_afxym"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8yewg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d4i2d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yy56v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_27jlj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_54775"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_strw1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gg6jq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3wfia"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ibbw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nc735"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_30xhm"]
+
+[node name="Sala2" type="Node2D"]
+script = ExtResource("1_73ss0")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 829.0
+offset_bottom = 577.0
+texture = ExtResource("2_81hfo")
+
+[node name="quadros" type="Button" parent="."]
+offset_left = 429.0
+offset_top = 120.0
+offset_right = 699.0
+offset_bottom = 292.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ylj0b")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5e6ne")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vowo7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_keoq3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_n74al")
+flat = true
+
+[node name="urso2" type="TextureRect" parent="."]
+visible = false
+offset_left = 300.0
+offset_top = 163.0
+offset_right = 535.0
+offset_bottom = 447.0
+texture = ExtResource("3_cvj8o")
+expand_mode = 1
+
+[node name="setaL" type="Button" parent="."]
+offset_left = 30.0
+offset_top = 264.0
+offset_right = 76.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ugdkg")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_co0ap")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_86f5f")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_b8wmi")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xqytl")
+flat = true
+
+[node name="setaR" type="Button" parent="."]
+offset_left = 756.0
+offset_top = 263.0
+offset_right = 801.0
+offset_bottom = 309.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ugoom")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6svps")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jy6pj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_afxym")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8yewg")
+flat = true
+
+[node name="urso" type="Button" parent="."]
+offset_left = 240.0
+offset_top = 300.0
+offset_right = 318.0
+offset_bottom = 401.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d4i2d")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yy56v")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_27jlj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_54775")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_strw1")
+flat = true
+
+[node name="beat" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_hasye")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 278.0
+offset_top = 489.0
+offset_right = 549.0
+offset_bottom = 524.0
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="musica" type="Button" parent="."]
+offset_left = 401.0
+offset_top = 345.0
+offset_right = 621.0
+offset_bottom = 403.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gg6jq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wfia")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1ibbw")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nc735")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_30xhm")
+flat = true
+
+[node name="texto" type="Label" parent="."]
+offset_left = 274.0
+offset_top = 494.0
+offset_right = 521.0
+offset_bottom = 538.0
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[connection signal="pressed" from="quadros" to="." method="_on_quadros_pressed"]
+[connection signal="pressed" from="setaL" to="." method="_on_seta_l_pressed"]
+[connection signal="pressed" from="setaR" to="." method="_on_seta_r_pressed"]
+[connection signal="pressed" from="urso" to="." method="_on_urso_pressed"]
+[connection signal="pressed" from="musica" to="." method="_on_musica_pressed"]

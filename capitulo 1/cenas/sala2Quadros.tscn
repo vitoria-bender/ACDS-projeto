@@ -1,0 +1,67 @@
+[gd_scene load_steps=13 format=3 uid="uid://chyvjobhfmhiv"]
+
+[ext_resource type="Script" path="res://capitulo 1/scripts/sala2Quadros.gd" id="1_nje8t"]
+[ext_resource type="Texture2D" uid="uid://cgfyw8wh7y5hw" path="res://capitulo 1/assets/QuadroSala2.png" id="2_6q4v4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lp1uf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dinen"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ksxyb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f1bbr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8jrmi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fmhw4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_psnx5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_khdvn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nqtmu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_txv8v"]
+
+[node name="Sala2Quadros" type="Node2D"]
+script = ExtResource("1_nje8t")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 825.0
+offset_bottom = 576.0
+texture = ExtResource("2_6q4v4")
+
+[node name="textoPoster" type="Label" parent="."]
+offset_left = 265.0
+offset_top = 499.0
+offset_right = 577.0
+offset_bottom = 537.0
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Pôsteres" type="Button" parent="."]
+offset_left = 140.0
+offset_top = 76.0
+offset_right = 698.0
+offset_bottom = 434.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lp1uf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dinen")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ksxyb")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_f1bbr")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8jrmi")
+flat = true
+
+[node name="sair" type="Button" parent="."]
+offset_left = 78.0
+offset_top = 473.0
+offset_right = 759.0
+offset_bottom = 560.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fmhw4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_psnx5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_khdvn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nqtmu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_txv8v")
+flat = true
+
+[connection signal="pressed" from="Pôsteres" to="." method="_on_pôsteres_pressed"]
+[connection signal="pressed" from="sair" to="." method="_on_sair_pressed"]

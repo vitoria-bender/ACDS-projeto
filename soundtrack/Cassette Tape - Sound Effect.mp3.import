@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dvd2eri0vq7rc"
+path="res://.godot/imported/Cassette Tape - Sound Effect.mp3-e70ace04ead300057d34dbc165086332.mp3str"
+
+[deps]
+
+source_file="res://soundtrack/Cassette Tape - Sound Effect.mp3"
+dest_files=["res://.godot/imported/Cassette Tape - Sound Effect.mp3-e70ace04ead300057d34dbc165086332.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,81 @@
+[gd_scene load_steps=18 format=3 uid="uid://b2a7tq5e84rap"]
+
+[ext_resource type="Script" path="res://capitulo 1/scripts/corredor.gd" id="1_4fg8x"]
+[ext_resource type="Texture2D" uid="uid://ck0e4uhfirp6u" path="res://capitulo 1/assets/corredor.png" id="2_4tcoi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5lnfb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1iq4a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ikqde"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nih6d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_671ij"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wjj0a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mxh5g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xdp76"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_phlmf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l4cjb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lqjsg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qvryt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_taoxi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_87a1o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hq41q"]
+
+[node name="Corredor" type="Node2D"]
+script = ExtResource("1_4fg8x")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 825.0
+offset_bottom = 573.0
+texture = ExtResource("2_4tcoi")
+
+[node name="quarto" type="Button" parent="."]
+offset_left = 258.0
+offset_top = 88.0
+offset_right = 443.0
+offset_bottom = 456.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5lnfb")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1iq4a")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ikqde")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nih6d")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_671ij")
+flat = true
+
+[node name="sair" type="Button" parent="."]
+offset_left = 742.0
+offset_top = 494.0
+offset_right = 797.0
+offset_bottom = 554.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wjj0a")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mxh5g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xdp76")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_phlmf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l4cjb")
+flat = true
+
+[node name="banheiro" type="Button" parent="."]
+offset_left = 551.0
+offset_top = 69.0
+offset_right = 694.0
+offset_bottom = 527.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lqjsg")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_qvryt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_taoxi")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_87a1o")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hq41q")
+flat = true
+
+[connection signal="pressed" from="quarto" to="." method="_on_quarto_pressed"]
+[connection signal="pressed" from="sair" to="." method="_on_sair_pressed"]
