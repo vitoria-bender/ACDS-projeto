@@ -13,6 +13,8 @@ var fade_speed = 0.5
 var time_passed = 0.0
 var fadeout_start_time = 20.0
 
+
+
 func _ready():
 	urso2.visible = false
 	player.volume_db = -80
@@ -21,7 +23,7 @@ func _ready():
 func _process(delta):
 	if fading_in:
 		time_passed += delta
-		var progress = min(time_passed / fadein_duration, 5.0)
+		var progress = min(time_passed / fadein_duration, 3.0)
 		var smooth_progress = progress * progress * (3.0 - 2.0 * progress)
 		player.volume_db = lerp(-80, 0, smooth_progress)
 		if progress >= 1.0:

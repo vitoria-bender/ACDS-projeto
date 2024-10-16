@@ -1,0 +1,61 @@
+[gd_scene load_steps=13 format=3 uid="uid://blqb7ynpdwhxx"]
+
+[ext_resource type="Script" path="res://capitulo 1/scripts/banheiro1.gd" id="1_he7yf"]
+[ext_resource type="Texture2D" uid="uid://d1tuneu0vnmm7" path="res://capitulo 1/assets/banheiro1.png" id="1_xep2l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ipda4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vamnv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_whbtu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rjfjs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xx3dj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nvkic"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rpudt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3sfug"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7vxj3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vuec4"]
+
+[node name="Banheiro1" type="Node2D"]
+script = ExtResource("1_he7yf")
+
+[node name="background" type="TextureRect" parent="."]
+offset_left = -7.0
+offset_top = -5.0
+offset_right = 830.0
+offset_bottom = 577.0
+texture = ExtResource("1_xep2l")
+
+[node name="setaL" type="Button" parent="."]
+offset_left = 33.0
+offset_top = 269.0
+offset_right = 66.0
+offset_bottom = 301.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ipda4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vamnv")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_whbtu")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_rjfjs")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xx3dj")
+flat = true
+
+[node name="setaR" type="Button" parent="."]
+offset_left = 761.0
+offset_top = 269.0
+offset_right = 798.0
+offset_bottom = 303.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nvkic")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rpudt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3sfug")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7vxj3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vuec4")
+flat = true
+
+[connection signal="pressed" from="setaL" to="." method="_on_seta_l_pressed"]
+[connection signal="pressed" from="setaR" to="." method="_on_seta_r_pressed"]

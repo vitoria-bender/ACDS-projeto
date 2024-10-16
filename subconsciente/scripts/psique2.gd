@@ -44,8 +44,6 @@ func _ready():
 	button1.visible = true 
 	button2.visible = true  
 	
-	
-	
 	show_dialogue(current_dialogue_index)  
 
 func show_dialogue(index):
