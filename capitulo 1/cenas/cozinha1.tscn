@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://cm80f4jfw68if"]
+[gd_scene load_steps=24 format=3 uid="uid://cm80f4jfw68if"]
 
 [ext_resource type="Script" path="res://capitulo 1/scripts/cozinha1.gd" id="1_gc5qh"]
 [ext_resource type="Texture2D" uid="uid://diaexu2a2su6c" path="res://capitulo 1/assets/Frame 34.png" id="2_w0j2h"]
+[ext_resource type="PackedScene" uid="uid://c4w12etq6ymt6" path="res://capitulo 1/cenas/clickableObject.tscn" id="3_wnvri"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xvnx1"]
 
@@ -32,6 +33,16 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8j7qx"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gja8l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_736sr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ihu8f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bik7a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p0j7t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rjlyh"]
 
 [node name="Cozinha1" type="Node2D"]
 script = ExtResource("1_gc5qh")
@@ -77,6 +88,22 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_8j7qx")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_gja8l")
 flat = true
 
+[node name="ClickableObject" parent="." instance=ExtResource("3_wnvri")]
+position = Vector2(477, 233)
+
+[node name="bilhete" type="Button" parent="."]
+offset_left = 114.0
+offset_top = 131.0
+offset_right = 271.0
+offset_bottom = 263.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_736sr")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ihu8f")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bik7a")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_p0j7t")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rjlyh")
+flat = true
+
 [connection signal="pressed" from="setaL" to="." method="_on_seta_l_pressed"]
 [connection signal="pressed" from="setaR" to="." method="_on_seta_r_pressed"]
 [connection signal="pressed" from="sair" to="." method="_on_sair_pressed"]
+[connection signal="pressed" from="bilhete" to="." method="_on_bilhete_pressed"]

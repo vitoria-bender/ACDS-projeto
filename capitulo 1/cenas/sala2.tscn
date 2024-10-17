@@ -1,9 +1,10 @@
-[gd_scene load_steps=30 format=3 uid="uid://b7gwehe01jtqj"]
+[gd_scene load_steps=31 format=3 uid="uid://b7gwehe01jtqj"]
 
 [ext_resource type="Script" path="res://capitulo 1/scripts/sala2.gd" id="1_73ss0"]
 [ext_resource type="Texture2D" uid="uid://wj0ddacrq5xg" path="res://capitulo 1/assets/sala2.png" id="2_81hfo"]
 [ext_resource type="Texture2D" uid="uid://cno6epjhjytpv" path="res://capitulo 1/assets/URSO.png" id="3_cvj8o"]
 [ext_resource type="AudioStream" uid="uid://g3c0imarndi3" path="res://soundtrack/beat.mp3" id="4_hasye"]
+[ext_resource type="PackedScene" uid="uid://c4w12etq6ymt6" path="res://capitulo 1/cenas/clickableObject.tscn" id="5_b7w7k"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ylj0b"]
 
@@ -150,6 +151,9 @@ offset_right = 521.0
 offset_bottom = 538.0
 horizontal_alignment = 1
 vertical_alignment = 2
+
+[node name="ClickableObject" parent="." instance=ExtResource("5_b7w7k")]
+position = Vector2(166, 475)
 
 [connection signal="pressed" from="quadros" to="." method="_on_quadros_pressed"]
 [connection signal="pressed" from="setaL" to="." method="_on_seta_l_pressed"]

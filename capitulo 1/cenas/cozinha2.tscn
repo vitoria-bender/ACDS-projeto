@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://c85xoqyc2ndct"]
+[gd_scene load_steps=19 format=3 uid="uid://c85xoqyc2ndct"]
 
 [ext_resource type="Script" path="res://capitulo 1/scripts/cozinha2.gd" id="1_me1xo"]
 [ext_resource type="Texture2D" uid="uid://bbnf3gux7782i" path="res://capitulo 1/assets/cozinha2.png" id="2_y6kr7"]
+[ext_resource type="PackedScene" uid="uid://c4w12etq6ymt6" path="res://capitulo 1/cenas/clickableObject.tscn" id="3_f1osw"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_am2tr"]
 
@@ -85,6 +86,9 @@ offset_bottom = 541.0
 theme_override_font_sizes/font_size = 18
 horizontal_alignment = 1
 vertical_alignment = 2
+
+[node name="ClickableObject" parent="." instance=ExtResource("3_f1osw")]
+position = Vector2(341, 303)
 
 [connection signal="pressed" from="setaL" to="." method="_on_seta_l_pressed"]
 [connection signal="pressed" from="setaR" to="." method="_on_seta_r_pressed"]

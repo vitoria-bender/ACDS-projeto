@@ -21,3 +21,8 @@ func _on_seta_r_pressed():
 func _on_sair_pressed():
 	get_tree().change_scene_to_file("res://capitulo 1/cenas/sala1.tscn")
 	pass 
+
+
+func _on_bilhete_pressed():
+	get_tree().change_scene_to_file("res://capitulo 1/cenas/cozinha1Bilhete.tscn")
+	pass 

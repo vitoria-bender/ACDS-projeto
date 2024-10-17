@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://bye1pr7ewwgpb"]
+[gd_scene load_steps=19 format=3 uid="uid://bye1pr7ewwgpb"]
 
 [ext_resource type="Script" path="res://capitulo 1/scripts/quarto3.gd" id="1_tcxd5"]
 [ext_resource type="Texture2D" uid="uid://eo7emxk2s5s5" path="res://capitulo 1/assets/quarto3 (1).png" id="2_xafx5"]
+[ext_resource type="PackedScene" uid="uid://c4w12etq6ymt6" path="res://capitulo 1/cenas/clickableObject.tscn" id="3_m8jp8"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yv6jw"]
 
@@ -76,6 +77,9 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad0i8")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_jgbwt")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_vn7si")
 flat = true
+
+[node name="ClickableObject" parent="." instance=ExtResource("3_m8jp8")]
+position = Vector2(406, 270)
 
 [connection signal="pressed" from="porta" to="." method="_on_porta_pressed"]
 [connection signal="pressed" from="setaL" to="." method="_on_seta_l_pressed"]

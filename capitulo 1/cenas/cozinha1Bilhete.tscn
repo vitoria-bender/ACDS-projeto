@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxs2vdabgyui5"]
+
+[ext_resource type="Texture2D" uid="uid://cpywcnlhl1t3i" path="res://capitulo 1/assets/cozinha1Bilhete.png" id="1_rarcc"]
+
+[node name="Cozinha1Bilhete" type="Node2D"]
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 829.0
+offset_bottom = 578.0
+texture = ExtResource("1_rarcc")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 376.0
+offset_top = 326.0
+offset_right = 728.0
+offset_bottom = 509.0

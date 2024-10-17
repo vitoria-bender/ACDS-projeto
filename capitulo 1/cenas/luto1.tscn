@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://crs1f64g828x8"]
 
 [node name="Luto1" type="Node2D"]
+
+[node name="background" type="ColorRect" parent="."]
+offset_right = 832.0
+offset_bottom = 581.0
+color = Color(0.0196078, 0.0196078, 0.0196078, 1)
